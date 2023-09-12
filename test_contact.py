@@ -51,7 +51,7 @@ class Home_page(unittest.TestCase):
         else:
             print("The message does not appear on the page")
     
-    def new_button(self):
+    def test_new_button(self):
         a_button = WebDriverWait(self.driver_setup, 10).until(
             EC.visibility_of_element_located(
                 (By.XPATH, '//*[@id="menu-item-22"]/a/span[2]')))
